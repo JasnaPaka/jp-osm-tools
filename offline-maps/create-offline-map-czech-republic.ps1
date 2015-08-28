@@ -8,7 +8,7 @@
 echo "Inicializing environment..."
 
 . ".\create-offline-map-common.ps1"
-initEnvironment;
+initEnvironment "czech";
 
 # We need contour lines (downloading pregenerated data for Czech republic)
 echo "Downloading contour lines for Czech Republic..."

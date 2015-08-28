@@ -4,10 +4,11 @@
 
 Add-Type -assembly "system.io.compression.filesystem"
 
-function initEnvironment() {
+
+function initEnvironment([string] $stateName) {
     
   # Remove old files (if exists)
-  Remove-Item *.pbf
+  Remove-Item $stateName*.pbf
     
   # We need Osmosis tool
   if (!(Test-Path .\osmosis)) {
