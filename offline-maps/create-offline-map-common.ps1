@@ -28,7 +28,7 @@ function initEnvironment([string] $stateName) {
   if (!(Test-Path .\plugins\mapsforge-map-writer-0.5.1.jar)) {
       echo "Downloading MapsForge plugin..."
       
-      Invoke-WebRequest http://ci.mapsforge.org/job/0.5.1/lastSuccessfulBuild/artifact/mapsforge-map-writer/build/libs/mapsforge-map-writer-0.5.1.jar `
+      Invoke-WebRequest https://repo1.maven.org/maven2/org/mapsforge/mapsforge-map-writer/0.5.1/mapsforge-map-writer-0.5.1.jar `
           -OutFile .\plugins\mapsforge-map-writer-0.5.1.jar 
   }    
     
